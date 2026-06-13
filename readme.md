@@ -5,7 +5,7 @@
 Open a terminal and run:
 
 ```bash
-git clone https://github.com/DevilsN3st/CN-skip
+git clone https://github.com/DevilsN3st/CR-skip
 cd crskip
 ```
 
