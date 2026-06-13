@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "CRSkip",
+  "version": "1.0.0",
+  "description": "Automatically skip intros, openings, recaps, and credits on Crunchyroll.",
+
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab"
+  ],
+
+  "host_permissions": [
+    "https://www.crunchyroll.com/*"
+  ],
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "CRSkip"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.crunchyroll.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
